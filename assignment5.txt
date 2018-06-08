@@ -1,6 +1,6 @@
 ///////////////////****Decision control***/////////////////
 
-Q.1- Take an input year from user and decide whether it is a leap year or not.
+**Q.1- Take an input year from user and decide whether it is a leap year or not.
 sol:-
       year=int(input("Enter a year:"))
 if(year % 4)==0:
@@ -14,10 +14,10 @@ if(year % 4)==0:
 else:
     print(year ,"is not a leap year")
     
-  Q.2- Take length and breadth input from user and check whether the dimensions are of square or rectangle.
+ ** Q.2- Take length and breadth input from user and check whether the dimensions are of square or rectangle.
   sol:-
     
- Q3. Take the input age of 3 people and determine oldest and youngest among them
+** Q3. Take the input age of 3 people and determine oldest and youngest among them
  sol:-
       age1= int(input("Enter first person age : "))
 age2= int(input("Enter second person age : "))
@@ -50,7 +50,7 @@ else:
   print ("All are equal")
      
      
-Q.5- A shop will give discount of 10% if the cost of purchased quantity is more than 1000.Ask user for quantity Suppose, one unit will cost 100. Judge and print total cost for user.    
+**Q.5- A shop will give discount of 10% if the cost of purchased quantity is more than 1000.Ask user for quantity Suppose, one unit will cost 100. Judge and print total cost for user.    
 
 sol:-
       unit=int(input("Enter total units: "))
