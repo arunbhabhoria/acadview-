@@ -17,5 +17,31 @@ else:
   Q.2- Take length and breadth input from user and check whether the dimensions are of square or rectangle.
   sol:-
     
+ Q3. Take the input age of 3 people and determine oldest and youngest among them
+ sol:-
+      age1= int(input("Enter first person age : "))
+age2= int(input("Enter second person age : "))
+age3= int(input("Enter Third person age : "))
+if age1 > age2 and age1 > age3:
+  print ("age1 is the oldest")
+  
+elif age2 > age1 and age2 > age3:
+  print ("age2 is the oldest")
+  
+elif age3 > age1 and age3 > age2:
+  print( "age3 is the oldest")
+  
+elif age1 < age2 and age1 < age3:
+  print ("It is younget")
+  
+elif age2 < age1 and age2 < age3:
+  print ("It is youngest")
+  
+elif age3 < age1 and age3 < age2:
+  print ("It is youngeat")
+  
+else:
+  print ("All are equal")
+     
            
             
