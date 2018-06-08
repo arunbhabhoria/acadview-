@@ -24,24 +24,31 @@ age2= int(input("Enter second person age : "))
 age3= int(input("Enter Third person age : "))
 if age1 > age2 and age1 > age3:
   print ("age1 is the oldest")
+  print ("age2and age3 are the youngest")
   
 elif age2 > age1 and age2 > age3:
   print ("age2 is the oldest")
+  print ("age1 and age3 are the youngest")
   
 elif age3 > age1 and age3 > age2:
   print( "age3 is the oldest")
+  print ("age1 and age2 are the youngest")
   
 elif age1 < age2 and age1 < age3:
   print ("age1 is younget")
+  print ("age2 and age3 are the oldest")
   
 elif age2 < age1 and age2 < age3:
   print ("age2 is youngest")
+  print ("age1 and age3 are the oldest")
   
 elif age3 < age1 and age3 < age2:
   print ("age3 is youngeat")
+  print ("age1 and age2 are the oldest")
   
 else:
   print ("All are equal")
+     
      
            
             
