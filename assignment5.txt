@@ -48,6 +48,29 @@ elif age3 < age1 and age3 < age2:
   
 else:
   print ("All are equal")
+  
+  
+  **Q.4- Write an if statement that lets a competitor know which of these prizes they won based on the number of points they scored, which is stored in the integer variable points(your input). points can only take on positive integer values up to 200. 
+If they've won a prize, the message should state "Congratulations! You won a [prize name]!" with the prize name. If there's no prize, the message should state "Sorry! No prize this time."
+
+Points	Prize
+1-50	No Prize
+51-150	Wooden Dog
+151-180	Book
+181-200	Chocolates
+
+sol:-
+      score=int(input("Enter your score= "))
+if score<=200 and score>=181:
+    print("Congratulations!You won a chocolate")
+elif score<=180 and score>=151:
+    print("Congratulations!You won a book")
+elif score<=150 and score>=51:
+    print("Congratulations!you won a wooden dog")
+elif score<=50 and score>=1:
+    print("Soory,No prize this time")
+else:
+    print("wrong input")
      
      
 **Q.5- A shop will give discount of 10% if the cost of purchased quantity is more than 1000.Ask user for quantity Suppose, one unit will cost 100. Judge and print total cost for user.    
