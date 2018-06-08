@@ -1,0 +1,66 @@
+ Q.Write a program to create a tuple with different data types and do the following operations. 
+
+1. Find the length of tuples
+sol:-
+	a=('happy',1,2,3,4,"arun","false",2,3,4,5,)
+	len(a)
+Out[110]: 11
+
+Q.2-Find largest and smallest elements of a tuples.
+ sol:-
+	tupple=(1,2,-5,-9,5,6)
+        max(tupple)
+Out[128]: 6
+         min(tupple)
+Out[129]: -9
+
+Q.3- Write a program to find the product of all elements of a tuple. 
+ sol:- 
+
+
+
+
+ /////////////////******SETS**////////////
+
+Q1.Calculate difference between two sets
+ sol:-
+	set1={10,20,30,40,50}
+        set2={10,20,30,50,70}
+        set1-set2
+    Out[178]: {40}
+
+Q2.Compare two sets.
+ sol:-  print(set1^set2)
+  out:-{70, 40}
+
+Q3.Print the result of intersection of two sets.
+sol:-
+	 b3 = [val for val in set1 if val in set2]
+         print (b3)
+out[179]-10, 50, 20, 30]
+
+///////////////////////DICTIONARIES////////////////////
+
+Q1. CREATE DICTIONARY OF 10 STUDENT INPUTS
+record = int(input("Enter Number of Students :"))
+stud_data={}
+for i in range(record):
+    Name = input("\nEnter the student name :").split()
+    Marks = input("\nEnter the marks : ").split()
+    Nam_key =  Name[0]
+    Mark_value = Marks[0]
+    stud_data[Nam_key] = {Mark_value}
+print(stud_data)
+
+Q2. SORT DICTIONARY ACCORDING TO MARKS
+sorted(stud_data, key = stud_data.get)
+print(stud_data)
+
+Q3. COUNT FREQUENCY OF EACH WORD IN WORD: MISSISSIPPI
+import collections
+word = "MISSISSIPPI"
+word_list = list(word)
+print(word_list)
+counter = collections.Counter(word_list)
+word_dictionary = dict(counter)
+print(word_dictionary)
