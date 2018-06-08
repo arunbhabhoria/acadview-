@@ -1,0 +1,21 @@
+///////////////////****Decision control***/////////////////
+
+Q.1- Take an input year from user and decide whether it is a leap year or not.
+sol:-
+      year=int(input("Enter a year:"))
+if(year % 4)==0:
+    if(year % 100)==0:
+        if(year % 400)==0:
+            print(year,"is a leap year")
+        else:
+            print(year,"is not a leap year")
+    else:
+        print(year,"is a leap year")
+else:
+    print(year ,"is not a leap year")
+    
+  Q.2- Take length and breadth input from user and check whether the dimensions are of square or rectangle.
+  sol:-
+    
+           
+            
