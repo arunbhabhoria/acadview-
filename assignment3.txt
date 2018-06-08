@@ -16,7 +16,9 @@ Out[129]: -9
 
 Q.3- Write a program to find the product of all elements of a tuple. 
  sol:- 
-
+tup=(1,4,6,9,10,12)
+product=(1*4*6*9*10*12)
+print("The product of the all the tuple elements is",product)
 
 
 
