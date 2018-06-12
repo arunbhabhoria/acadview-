@@ -1,0 +1,88 @@
+Q1.Take 10 integers from user and print it on screen.
+sol:-
+ 	num=[int(input("Enter a value: ")) for i in range(10)]
+
+
+Q2. Write an infinite loop.An infinite loop never ends. Condition is always true. 
+
+sol:- z={"name":'arun',"class":'9pm'}
+	i=0
+	i=range(len(z.items()))
+	while(i):
+    		print(True)
+
+Q3.Create a list of integer elements by user input. Make a new list which will store square of elements of previous list.
+
+sol:-
+    	n1=[]
+	n2=[]
+	for x in range(10):
+    			n1.append(int(input("Enter %dth number: "%(x+1))))
+    			n2.append(n1[x]*n1[x])
+   			 print("Sqaure of list:")
+    	for x in range(len(n2)):
+       			 print(n2[x])
+
+Q4. From a list containing ints, strings and floats, make three lists to store them separately 
+sol:-
+	s = ["arun","happy",1,2,2.3,2.4]
+I= []
+S= []
+F= []
+for x in range(len(s)):
+    if(type(s[x])== int):
+            I.append(s[x])
+    elif(type(s[x])== str):
+            S.append(s[x])
+    elif(type(s[x])== float):
+            F.append(s[x])
+print("Integer List: ", I)
+print("Float List: ", F)
+print("String List: ",S)
+
+Q5.Using range(1,101), make a list containing even and odd numbers. 
+sol:-
+	evn=[]
+odd=[]
+for x in range(1,101):
+    if x%2 == 0:
+        evn.append(x)
+    else:
+        odd.append(x)
+print(evn)
+print(odd)
+
+Q6.Print the following patterns: 
+sol:-
+	for x in range(4):
+   	 print("*"*(x+1))
+Q7. Create a user defined dictionary and get keys corresponding to the value using for loop.
+sol:-
+	s = {}
+for x in range(2):    
+   new_key =input('Enter key: ')
+   new_age = input('Enter age: ')
+   s[new_key] = new_age
+print(s)
+
+
+Q9. Take inputs from user to make a list. Again take one input from user and search it in the list and delete that element, if found. Iterate over list using for loop.
+sol:-
+	list = []
+flag = 0
+for x in range(4):
+    list.append((input("Enter a value: ")))
+key = input("\nEnter element to search & delete: ")
+for x in list:
+    if(x==key):
+        list.remove(x)
+        flag = 1     
+if (flag==0):
+    print("\nElement not found")
+else:
+    print("\nElement found & deleted")
+    
+    print(list)
+
+        
+        
