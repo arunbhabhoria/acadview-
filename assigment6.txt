@@ -66,7 +66,7 @@ for x in range(2):
 print(s)
 
 
-Q9. Take inputs from user to make a list. Again take one input from user and search it in the list and delete that element, if found. Iterate over list using for loop.
+Q8. Take inputs from user to make a list. Again take one input from user and search it in the list and delete that element, if found. Iterate over list using for loop.
 sol:-
 	list = []
 flag = 0
