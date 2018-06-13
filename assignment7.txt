@@ -1,0 +1,61 @@
+Q1.Create a function to calculate the area of a circle by taking radius from user.
+
+sol:-
+	r1=int(input("Enter radius: "))
+def area_c(r1):
+    area=3.14*r1*r1
+    return area
+print("the area is",area_c(r1))
+    
+
+Q.2- Write a function “perfect()” that determines if parameter number is a perfect number. 
+Use this function in a program that determines and prints all the perfect numbers between 1 and 1000. 
+[An integer number is said to be “perfect number” if its factors, including 1(but not the number itself), 
+sum to the number. E.g., 6 is a perfect number because 6=1+2+3].
+
+sol:-n = int(input("Enter any number: "))
+sum1 = 0
+for i in range(1, n):
+    if(n % i == 0):
+        sum1 = sum1 + i
+if (sum1 == n):
+    print("The number is a Perfect number!")
+else:
+    print("The number is not a Perfect number!")
+
+
+Q3. Print multiplication table of 12 using recursion.
+
+
+sol:-def timetable(n, time=1):
+    if time <= 12:
+        print(n,"*",time,"=",n*time)
+        timetable(n, time+1)
+    else:
+        return
+
+timetable(int(input('Number: ')))
+
+
+Q4- Write a function to calculate power of a number raised to other ( a^b ) using recursion.
+
+sol:- def powern(n):
+    if n>0:
+        n1=n*n
+        print("powerof",n,"is: ",n1)
+    else:
+        return
+
+powern(int(input('Number: ')))
+
+Q5. Write a function to find factorial of a number but also store the factorials calculated in a dictionary.
+
+sol:-ef factorial(n):
+    if(n <= 1):
+        return 1
+    else:
+        return(n*factorial(n-1))
+n = int(input("Enter number:"))
+print("Factorial:")
+print(factorial(n))
+	
