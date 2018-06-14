@@ -1,0 +1,59 @@
+Q.1- What is Time Tuple?
+sol:- 1) The timetuple() method of datetime.date instances returns an object of type time.struct_time. 
+     2) The struct_time is a named tuple object (A named tuple object has attributes that can be accessed by an index or by name).
+     3) The struct_time object has attributes for representing both date and time fields along with a flag to indicate whether Daylight Saving Time is active.
+example:-
+	import datetime
+  	todaysDate = datetime.date.today()
+	timeTuple = todaysDate.timetuple()
+	print(timeTuple)
+	print(timeTuple.tm_year)
+
+Q2.Write a program to get formatted time.
+
+sol:-import datetime
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
+
+Q3. Extract month from the time.
+
+sol:-
+	import datetime
+	d=datetime.datetime.now()
+	print (d.month)
+
+Q4. - Extract day from the time.
+
+sol:- import datetime
+      d=datetime.datetime.now()
+      print(d.day)
+Q6.Write a program to print time using localtime method.
+
+sol:- 	import time
+	t=time.localtime()
+	print(t)
+Q7.Find the factorial of a number input by user using math package functions.
+sol:-import math
+     x=int(input("enter number:"))
+     m=math.factorial(x)
+     print("factorial of ",x, "is:",m)
+
+Q8.Find the GCD of a number input by user using math package functions.
+
+sol:-   import math
+	x=int(input("Enter 1st no:"))
+	y=int(input("Enter 2nd no: "))
+	m=math.gcd(x,y)
+	print("\ngcd of",x,"and",y,"is: ",m)
+
+Q9.Use OS package and do the following tasks: 
+1. Get current working directory.
+2. Get the user environment.
+
+sol:-  1)- import os
+	   os.getcwd()
+output:-'C:\\Users\\arun\\.spyder-py3'
+
+       2) import os
+	   print(os.environ)
