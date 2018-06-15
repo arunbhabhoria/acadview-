@@ -1,0 +1,72 @@
+Q.1- Create a circle class and initialize it with radius. Make two methods getArea and getCircumference inside this class.
+ sol:- class point:
+    def _init_(self,r):
+        self.radius=r
+        print("radius",self.radius)
+    def getArea(self):
+        area=3.14*self.radius*self.radius
+        print("Area: ",area )
+    def getCircum(self):
+        c=2*3.14*self.radius
+        print("Circumference: %.2f" %c)
+
+obj=point(12)
+obj.getArea()
+obj.getCircum()
+      
+
+Q.2- Create a Student class and initialize it with name and roll number. Make methods to :
+1. Display - It should display all informations of the student.  
+
+sol:- class Student:
+    def __init__(self,name,roll):                 
+        self.n = name
+        self.r = roll
+    def Display(self):
+        print("Name: ", self.n)
+        print("Roll Number: ", self.r)      
+S1 = Student("Arun",13)    
+S1.Display()                  
+S2 = Student("Happy", 12)   
+S2.Display()
+
+
+
+Q.3- Create a Temprature class. Make two methods :
+1. convertFahrenheit - It will take celsius and will print it into Fahrenheit.
+2. convertCelsius - It will take Fahrenheit and will convert it into Celsius.
+
+sol:-class Temperature:
+    def __init__(self,temp):
+        self.t = temp
+    def convertFahrenheit(self):                  
+        fah = (9/5)*self.t + 32
+        print("Fahrenheit Equivalent: ", fah)
+    def convertCelsius(self):
+        cel = (self.t-32)*(5/9)
+        print("Celsius Equivalent: ", cel)
+t1 = Temperature(44)          
+t2 = Temperature(105.8)
+t1.convertFahrenheit()        
+t2.convertCelsius()           
+
+Q.5- Create a class Expenditure and initialize it with expenditure,savings.Make the following methods. 
+1. Display expenditure and savings 
+2. Calculate total salary
+3. Display salary
+
+sol:- class Expenditure:                                  
+    def __init__(self,expenditure, savings):     
+        self.e = expenditure
+        self.s = savings
+    def Display(self):                           
+        print("Expenditure: ", self.e)           
+        print("Savings: ", self.s)
+    def Calculate_salary(self):                  
+        self.salary = self.s - self.e 
+    def Display_salary(self):
+        print("Salary: ", self.salary)           
+E = Expenditure(50000,256000)
+E.Display()
+E.Calculate_salary()                             
+E.Display_salary()                               
