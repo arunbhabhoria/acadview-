@@ -1,0 +1,105 @@
+Q.1- Name and handle the exception occured in the following program: 
+a=3
+ if a<4:
+    a=a/(a-3)
+     print(a)
+Sol:-
+a=3
+try:
+    if a<4:
+         a=a/(a-3)
+except IndentationError:
+     print(a)
+Q.2- Name and handle the exception occurred in the following program: 
+l=[1,2,3]
+print(l[3])
+
+SOl:-#IndexError is Occcured In this program.
+#In can be handled through Exception handling.
+try:                      #This is the try block
+  l=[1,2,3]  
+  print(l[3])  
+except Exception as r:    #""Here Exception is handled ""
+    print(r)
+
+Output:- list index out of range
+
+Q.3- What will be the output of the following code:
+
+# Program to depict Raising Exception
+ 
+try:
+    raise NameError("Hi there")  # Raise Error
+except NameError:
+    print "An exception"
+    raise  # To determine whether the exception was raised or not
+
+Output:- Hi there
+"""Output will be "Hit there"
+ because a error is raised in the try block """
+
+
+Q.4- What will be the output of the following code:
+
+ # Function which returns a/b
+def AbyB(a , b):
+	try:
+		c = ((a+b) / (a-b))
+	except ZeroDivisionError:
+		print "a/b result in 0"
+	else:
+		print c
+
+# Driver program to test above function
+AbyB(2.0, 3.0)
+AbyB(3.0, 3.0)
+
+Output:-5.0
+	a/b result in 0
+
+Q.5- Write a program to show and handle following exceptions: 
+1. Import Error
+2. Value Error
+3. Index Error
+
+Sol:- 1) try:
+    import Chaii   #here i am trying to import chai , 
+                    #But as in python there is not module as chai
+except ImportError:
+    print("Bhai ye toh koi Module nahi ha!!") 
+    # Here  throw an excpetion error
+2)
+ 
+#handling a ValueError using try and except keyword"
+""" If i will enter a string in the input it will show A ValueError but i can 
+ control that Error using Exception handle
+ see here I caught the ValueError without getting a error from IDE really"""
+try:
+    print(int(input("Enter a number: "))) 
+except ValueError:
+    print("Bhai Sirf Number dalne hai.") 
+    
+3)
+try:
+        value=[1,2]
+        value[99] #This value will through a IndexError because no value exist in the index 99
+except IndexError:
+    print("Ye toh IndexError Hai Bawa")
+
+
+Q.6- Create a user-defined exception AgeTooSmallError() that warns the user when they have entered age less than 18.
+ The code must keep taking input till the user enters the appropriate age number(less than 18). 
+
+Sol:- 
+"""In this program  I am goona raise an Error"""
+
+age=int(input("Enter your age: "))
+if age<18:
+     raise AgeTooSmallError("Bhai Abhi tum Bache ho")  #Error raised
+else:
+       print(age)
+          
+
+    
+
+
