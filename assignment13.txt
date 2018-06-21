@@ -4,12 +4,15 @@ a=3
     a=a/(a-3)
      print(a)
 Sol:-
-a=3
 try:
+    a=3
     if a<4:
-         a=a/(a-3)
+        a=a/(a-3)
+        print(a)
 except IndentationError:
-     print(a)
+    print("No Probblem!!")
+except ZeroDivisionError:
+    print("No Problem")
 Q.2- Name and handle the exception occurred in the following program: 
 l=[1,2,3]
 print(l[3])
