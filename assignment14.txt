@@ -1,0 +1,47 @@
+Save the following passage in .txt file. Solve the below questions using this file.
+“Atticus said to Jem one day, “I’d rather you shot at tin cans in the backyard, but I know you’ll go after birds. 
+Shoot all the blue jays you want, if you can hit ‘em, but remember it’s a sin to kill a mockingbird.” 
+That was the only time I ever heard Atticus say it was a sin to do something, and I asked Miss Maudie about it. 
+“Your father’s right,” she said. “Mockingbirds don’t do one thing except make music for us to enjoy. 
+They don’t eat up people’s gardens, don’t nest in corn cribs, they don’t do one thing but sing their hearts out for us. 
+That’s why it’s a sin to kill a mockingbird.” – Harper Lee, To Kill a Mockingbird
+Q.1- Write a Python program to read last n lines of a file
+
+Sol:-import sys
+import os
+def file_read_from_tail(fname,lines):
+        bufsize = 8192
+        fsize = os.stat(fname).st_size
+        iter = 0
+        with open(fname) as f:
+                if bufsize > fsize:
+                        bufsize = fsize-1
+                        data = []
+                        while True:
+                                iter +=1
+                                f.seek(fsize-bufsize*iter)
+                                data.extend(f.readlines())
+                                if len(data) >= lines or f.tell() == 0:
+                                        print(''.join(data[-lines:]))
+                                        break
+
+file_read_from_tail('acad.txt',2)
+
+
+ Q.2- Write a Python program to count the frequency of words in a file.
+
+Sol:-from collections import Counter
+def word_count(fname):
+        with open(fname) as f:
+                return Counter(f.read().split())
+
+print("Number of words in the file :",word_count("acad.txt"))
+
+Q.3- Write a Python program to copy the contents of a file to another file.
+SOl:-
+from shutil import copyfile
+copyfile('temp.py', '3.py')
+
+
+
+
