@@ -1,0 +1,60 @@
+Q.1- Extract the user id, domain name and suffix from the following email addresses. 
+emails = "zuck26@facebook.com" "page33@google.com"
+"jeff42@amazon.com"
+desired_output = [('zuck26', 'facebook', 'com'), ('page33', 'google', 'com'), ('jeff42', 'amazon', 'com')]\
+
+Sol:-
+import re #re module included with Python primarily used for string searching and manipulation
+emails = """zuck26@facebook.com
+page33@google.com
+jeff42@amazon.com"""
+r1=(re.findall(r'(\w+)@([A-Z0-9]+)\.([A-Z]{2,4})', emails, flags=re.IGNORECASE))
+"""
+re.findall will Return all non-overlapping matches of pattern in string, as a list of strings.
+The string is scanned left-to-right, and matches are returned in the order found.
+If one or more groups are present in the pattern, return a list of groups.
+
+re.IGNORECASE
+Perform case-insensitive matching; expressions like [A-Z] will match lowercase letters, too.
+This is not affected by the current locale. 
+
+"""
+print(r1)
+
+
+Q.2- Retrieve all the words starting with ‘b’ or ‘B’ from the following text.
+text = "Betty bought a bit of butter, But the butter was so bitter, So she bought some better butter, To make the bitter butter better."
+
+Sol:-
+
+import re
+text = "Betty bought a bit of butter, But the butter was so bitter, So she bought some better butter, To make the bitter butter better." 
+r1=re.findall('b\B\w+', text, flags=re.IGNORECASE) #Find all substrings where the RE matches, and returns them as a list.
+"""
+re.findall will Return all non-overlapping matches of pattern in string, as a list of strings.
+The string is scanned left-to-right, and matches are returned in the order found.
+If one or more groups are present in the pattern, return a list of groups.
+
+
+re.IGNORECASE
+Perform case-insensitive matching; expressions like [A-Z] will match lowercase letters, too.
+This is not affected by the current locale. 
+
+"""
+print(r1)
+
+Q.3- Split the following irregular sentence into words 
+sentence = "A, very very; irregular_sentence"
+desired_output = "A very very irregular sentence"
+
+Sol:-
+import re
+sentence = "A, very very; irregular_sentence"
+r1= " ".join(re.split('[,\;\_]+', sentence)) 
+"""
+Split string by the occurrences of pattern. 
+If capturing parentheses are used in pattern, 
+then the text of all groups in the pattern are also returned as part of the resulting list. 
+"""
+print(r1)
+
