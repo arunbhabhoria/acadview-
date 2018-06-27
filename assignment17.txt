@@ -84,7 +84,23 @@ root.mainloop()""""The program will stay in the event loop until we close the wi
 root.destroy() 
 
 Q4. Write a python program using tkinter interface to take an input in the GUI program and print it.
-Sol:-
+Sol:-def printtext():
+    global e
+    string = e.get() 
+    print (string  ) 
+
+from tkinter import *
+root = Tk()
+
+root.title('Name')
+
+e = Entry(root)
+e.pack()
+e.focus_set()
+
+b = Button(root,text='okay',command=printtext)
+b.pack(side='bottom')
+root.mainloop()
 
 
 
