@@ -1,0 +1,16 @@
+HELLO!! THIS IS MY FIRST GIT FILE.
+THE COMMANDS USED WHILE MAKING REPOSITORIES ARE IN THE F/W SEQUENCE:
+1. cd desktop: Direct to the preferred directory
+2. cd mkdir hello-git: Create a folder named "hello-git"
+3. cd hello-git: Access hello-git
+4. git init: intitialize the git repository
+5. nano git-commands.txt: create a text file named git-commands and 
+write all the procedures in it( I am using the nano as default editor)
+6. git add.
+7. git commit -m "my firs git commit": It tries to commit the changes
+8. Now we have to link our git environment with github. So,
+   i. git config --global user.email "my email here"
+   ii. git config --global user.name "my username here"
+9. git remote add origin "my github repository url here"
+10. git push origin master: Allows to upload my file to Github account.
+11. exit
