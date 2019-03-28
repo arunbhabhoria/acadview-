@@ -1,8 +1,10 @@
 Q1. PRINT ANYTHING ON PYTHON
 print("Hello! I am SHUBHAM KALA")
+output:-Hello! I am SHUBHAM KALA
 
 #Q2. Join Two Strings using +
-print("Arun" + "Bhabhoria")
+print("SHUBHAM" + "\tKALA")
+ouput:-SHUBHAM KALA
 
 #Q3. Take 3 inputs from user and print their values
 age = input("Enter Your Age: ")
@@ -12,16 +14,24 @@ print ("\nYour Age: " + age)
 print ("Your Branch: " + branch)
 print ("Your SGPA: " + sgpa)
 
-#Q4. Print The following
-print ("Let's get started")
+output:- Enter Your Age: 20
+         Enter Your Branch: cse
+         Enter Your SGPA: 9
+Your Age: 20
+Your Branch: cse
+Your SGPA: 9
 
-#Q5. Use placeholders for printing
+
+
+#Q4. Use placeholders for printing
 s="Acadview"
 course="Python"
 fees=5000
 print ('%s %s %d' % (s,course,fees))
 
-#Q6. Fill in the Blanks
+output:- Acadview Python 5000
+
+#Q5. Fill in the Blanks
 name="arun"
 salary=1000000
 print(('%s''%d')%(name,salary))
