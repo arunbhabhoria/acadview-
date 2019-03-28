@@ -18,14 +18,20 @@ print(s.count('4'))
 #Q4. Create a list with numbers and sort it in ascending order
 x = [1, 7, 4, 2, 0]
 x.sort()
+print(x)
+
+output:-[0,1,2,4,7]
 
 #Q5. Merge two arrays
-list1 = [1, 2, 3, 4, 5, 6]
+list1 = [1, 2, 6,5,3,0]
 list2 = [-1, -2, -3, -4, -5, -6]
 list1.sort()
 list2.sort()
 list3 = list1 + list2
 list3.sort()
+print(list3)
+
+output:-[-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 5, 6]
 
 #Q6. Implement stack and queue with lists
 
