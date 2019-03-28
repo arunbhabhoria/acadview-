@@ -2,10 +2,15 @@
 a = input()
 s = list(a.split())
 
+output:- shubham learning python
+['shubham', 'learning', 'python']
+
 #Q2. Add the following list to above created list
 b = ['google','apple','facebook','microsoft','tesla']
 s.extend(b)
 print (s)
+
+output:- ['shubham', 'learning', 'python', 'google', 'apple', 'facebook', 'microsoft', 'tesla']
 
 #Q3. Count frequency of objects in the list
 print(s.count('4'))
